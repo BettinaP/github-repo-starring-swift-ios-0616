@@ -8,12 +8,12 @@
 
 import UIKit
 
-class GithubRepository {
+class GithubRepository {// class we wrote to hold each repository
     var fullName: String
     var htmlURL: NSURL
     var repositoryID: String
     
-    init(dictionary: NSDictionary) {
+    init(dictionary: NSDictionary) { // initializer takes dictionary, which is what we're passing in to access certain keys and map
         guard let
             name = dictionary["full_name"] as? String,
             valueAsString = dictionary["html_url"] as? String,
